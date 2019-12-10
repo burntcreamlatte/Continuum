@@ -9,21 +9,22 @@
 /* Begin PBXBuildFile section */
 		AB4D6F2823A0318B00EDB9B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6F2723A0318B00EDB9B8 /* AppDelegate.swift */; };
 		AB4D6F2A23A0318B00EDB9B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6F2923A0318B00EDB9B8 /* SceneDelegate.swift */; };
-		AB4D6F2C23A0318B00EDB9B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6F2B23A0318B00EDB9B8 /* ViewController.swift */; };
 		AB4D6F2F23A0318B00EDB9B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4D6F2D23A0318B00EDB9B8 /* Main.storyboard */; };
 		AB4D6F3123A0318E00EDB9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4D6F3023A0318E00EDB9B8 /* Assets.xcassets */; };
 		AB4D6F3423A0318E00EDB9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4D6F3223A0318E00EDB9B8 /* LaunchScreen.storyboard */; };
+		AB4D6F3E23A031B100EDB9B8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4D6F3D23A031B100EDB9B8 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB4D6F2423A0318B00EDB9B8 /* Continuum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Continuum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4D6F2723A0318B00EDB9B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4D6F2923A0318B00EDB9B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB4D6F2B23A0318B00EDB9B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB4D6F2E23A0318B00EDB9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB4D6F3023A0318E00EDB9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB4D6F3323A0318E00EDB9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB4D6F3523A0318E00EDB9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB4D6F3B23A031AD00EDB9B8 /* Continuum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Continuum.entitlements; sourceTree = "<group>"; };
+		AB4D6F3D23A031B100EDB9B8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4D6F3E23A031B100EDB9B8 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +44,7 @@
 			children = (
 				AB4D6F2623A0318B00EDB9B8 /* Continuum */,
 				AB4D6F2523A0318B00EDB9B8 /* Products */,
+				AB4D6F3C23A031B100EDB9B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +59,79 @@
 		AB4D6F2623A0318B00EDB9B8 /* Continuum */ = {
 			isa = PBXGroup;
 			children = (
-				AB4D6F2723A0318B00EDB9B8 /* AppDelegate.swift */,
-				AB4D6F2923A0318B00EDB9B8 /* SceneDelegate.swift */,
-				AB4D6F2B23A0318B00EDB9B8 /* ViewController.swift */,
-				AB4D6F2D23A0318B00EDB9B8 /* Main.storyboard */,
-				AB4D6F3023A0318E00EDB9B8 /* Assets.xcassets */,
-				AB4D6F3223A0318E00EDB9B8 /* LaunchScreen.storyboard */,
-				AB4D6F3523A0318E00EDB9B8 /* Info.plist */,
+				AB4D6F4223A0322600EDB9B8 /* Models */,
+				AB4D6F4123A0322200EDB9B8 /* Views */,
+				AB4D6F4023A0321D00EDB9B8 /* Controllers */,
+				AB4D6F3F23A0320600EDB9B8 /* Resources */,
 			);
 			path = Continuum;
+			sourceTree = "<group>";
+		};
+		AB4D6F3C23A031B100EDB9B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6F3D23A031B100EDB9B8 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB4D6F3F23A0320600EDB9B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6F3B23A031AD00EDB9B8 /* Continuum.entitlements */,
+				AB4D6F2723A0318B00EDB9B8 /* AppDelegate.swift */,
+				AB4D6F2923A0318B00EDB9B8 /* SceneDelegate.swift */,
+				AB4D6F3023A0318E00EDB9B8 /* Assets.xcassets */,
+				AB4D6F3523A0318E00EDB9B8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB4D6F4023A0321D00EDB9B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6F4523A0323800EDB9B8 /* Model Controllers */,
+				AB4D6F4423A0323100EDB9B8 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB4D6F4123A0322200EDB9B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6F4323A0322A00EDB9B8 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB4D6F4223A0322600EDB9B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB4D6F4323A0322A00EDB9B8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6F2D23A0318B00EDB9B8 /* Main.storyboard */,
+				AB4D6F3223A0318E00EDB9B8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AB4D6F4423A0323100EDB9B8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AB4D6F4523A0323800EDB9B8 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB4D6F2C23A0318B00EDB9B8 /* ViewController.swift in Sources */,
 				AB4D6F2823A0318B00EDB9B8 /* AppDelegate.swift in Sources */,
 				AB4D6F2A23A0318B00EDB9B8 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,9 +350,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Continuum/Resources/Continuum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
-				INFOPLIST_FILE = Continuum/Info.plist;
+				INFOPLIST_FILE = Continuum/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +369,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Continuum/Resources/Continuum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
-				INFOPLIST_FILE = Continuum/Info.plist;
+				INFOPLIST_FILE = Continuum/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
