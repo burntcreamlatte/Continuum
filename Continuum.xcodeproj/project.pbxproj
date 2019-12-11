@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB200EB923A037FD001B7312 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200EB823A037FD001B7312 /* PostListTableViewController.swift */; };
+		AB200EBB23A03825001B7312 /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200EBA23A03825001B7312 /* PostDetailTableViewController.swift */; };
+		AB200EBD23A03838001B7312 /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200EBC23A03838001B7312 /* AddPostTableViewController.swift */; };
+		AB200EBF23A03B5A001B7312 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200EBE23A03B5A001B7312 /* Post.swift */; };
+		AB200EC123A03B62001B7312 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200EC023A03B62001B7312 /* Comment.swift */; };
+		AB200EC323A04052001B7312 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200EC223A04052001B7312 /* PostController.swift */; };
+		AB200EC623A04A5A001B7312 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200EC523A04A5A001B7312 /* PostTableViewCell.swift */; };
+		AB200EC923A05C60001B7312 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200EC823A05C60001B7312 /* DateExtension.swift */; };
+		AB200EDD23A18C3F001B7312 /* SearchableRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200EDC23A18C3F001B7312 /* SearchableRecord.swift */; };
+		AB200EDF23A1A158001B7312 /* PhotoSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200EDE23A1A158001B7312 /* PhotoSelectorViewController.swift */; };
 		AB4D6F2823A0318B00EDB9B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6F2723A0318B00EDB9B8 /* AppDelegate.swift */; };
 		AB4D6F2A23A0318B00EDB9B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6F2923A0318B00EDB9B8 /* SceneDelegate.swift */; };
 		AB4D6F2F23A0318B00EDB9B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4D6F2D23A0318B00EDB9B8 /* Main.storyboard */; };
@@ -16,6 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB200EB823A037FD001B7312 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		AB200EBA23A03825001B7312 /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
+		AB200EBC23A03838001B7312 /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
+		AB200EBE23A03B5A001B7312 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AB200EC023A03B62001B7312 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		AB200EC223A04052001B7312 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		AB200EC523A04A5A001B7312 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		AB200EC823A05C60001B7312 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		AB200EDC23A18C3F001B7312 /* SearchableRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableRecord.swift; sourceTree = "<group>"; };
+		AB200EDE23A1A158001B7312 /* PhotoSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorViewController.swift; sourceTree = "<group>"; };
 		AB4D6F2423A0318B00EDB9B8 /* Continuum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Continuum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4D6F2723A0318B00EDB9B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4D6F2923A0318B00EDB9B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB200EC423A04A44001B7312 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB200EC523A04A5A001B7312 /* PostTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		AB200EC723A05C55001B7312 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AB200EC823A05C60001B7312 /* DateExtension.swift */,
+				AB200EDC23A18C3F001B7312 /* SearchableRecord.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		AB4D6F1B23A0318B00EDB9B8 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +96,7 @@
 		AB4D6F2623A0318B00EDB9B8 /* Continuum */ = {
 			isa = PBXGroup;
 			children = (
+				AB200EC723A05C55001B7312 /* Utility */,
 				AB4D6F4223A0322600EDB9B8 /* Models */,
 				AB4D6F4123A0322200EDB9B8 /* Views */,
 				AB4D6F4023A0321D00EDB9B8 /* Controllers */,
@@ -99,6 +137,7 @@
 		AB4D6F4123A0322200EDB9B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AB200EC423A04A44001B7312 /* Custom Views */,
 				AB4D6F4323A0322A00EDB9B8 /* Storyboards */,
 			);
 			path = Views;
@@ -107,6 +146,8 @@
 		AB4D6F4223A0322600EDB9B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AB200EBE23A03B5A001B7312 /* Post.swift */,
+				AB200EC023A03B62001B7312 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +164,10 @@
 		AB4D6F4423A0323100EDB9B8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AB200EB823A037FD001B7312 /* PostListTableViewController.swift */,
+				AB200EBA23A03825001B7312 /* PostDetailTableViewController.swift */,
+				AB200EBC23A03838001B7312 /* AddPostTableViewController.swift */,
+				AB200EDE23A1A158001B7312 /* PhotoSelectorViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -130,6 +175,7 @@
 		AB4D6F4523A0323800EDB9B8 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AB200EC223A04052001B7312 /* PostController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -205,8 +251,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB200EB923A037FD001B7312 /* PostListTableViewController.swift in Sources */,
+				AB200EC923A05C60001B7312 /* DateExtension.swift in Sources */,
+				AB200EC323A04052001B7312 /* PostController.swift in Sources */,
+				AB200EBD23A03838001B7312 /* AddPostTableViewController.swift in Sources */,
 				AB4D6F2823A0318B00EDB9B8 /* AppDelegate.swift in Sources */,
+				AB200EC123A03B62001B7312 /* Comment.swift in Sources */,
+				AB200EDF23A1A158001B7312 /* PhotoSelectorViewController.swift in Sources */,
+				AB200EBF23A03B5A001B7312 /* Post.swift in Sources */,
+				AB200EBB23A03825001B7312 /* PostDetailTableViewController.swift in Sources */,
 				AB4D6F2A23A0318B00EDB9B8 /* SceneDelegate.swift in Sources */,
+				AB200EC623A04A5A001B7312 /* PostTableViewCell.swift in Sources */,
+				AB200EDD23A18C3F001B7312 /* SearchableRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
