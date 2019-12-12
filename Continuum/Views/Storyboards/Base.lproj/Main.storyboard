@@ -149,11 +149,11 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" id="lUn-bx-EWy" customClass="PostTableViewCell" customModule="Continuum" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="84" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="490" id="lUn-bx-EWy" customClass="PostTableViewCell" customModule="Continuum" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="84" width="414" height="490"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lUn-bx-EWy" id="SHc-9z-VMa">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="490"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lWy-5D-Wco">
@@ -162,16 +162,14 @@
                                                 <constraint firstAttribute="width" secondItem="lWy-5D-Wco" secondAttribute="height" multiplier="1:1" id="FHk-eT-sqk"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(caption)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kan-SM-Gdz">
-                                            <rect key="frame" x="28" y="394" width="69" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="(caption)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kan-SM-Gdz">
+                                            <rect key="frame" x="28" y="387" width="69" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(comment count)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fo-dR-lba">
-                                            <rect key="frame" x="28" y="423" width="133" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="(comment count)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fo-dR-lba">
+                                            <rect key="frame" x="28" y="417.5" width="133" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -180,8 +178,10 @@
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="lWy-5D-Wco" secondAttribute="trailing" constant="8" id="G7R-Il-93w"/>
                                         <constraint firstItem="lWy-5D-Wco" firstAttribute="centerX" secondItem="SHc-9z-VMa" secondAttribute="centerX" id="Gma-aC-gxO"/>
+                                        <constraint firstItem="8fo-dR-lba" firstAttribute="top" secondItem="kan-SM-Gdz" secondAttribute="bottom" constant="10" id="T5P-hP-Tq0"/>
                                         <constraint firstItem="lWy-5D-Wco" firstAttribute="top" secondItem="SHc-9z-VMa" secondAttribute="topMargin" constant="8" id="U7M-jQ-VhP"/>
                                         <constraint firstItem="lWy-5D-Wco" firstAttribute="leading" secondItem="SHc-9z-VMa" secondAttribute="leadingMargin" constant="8" id="W2b-rf-GiD"/>
+                                        <constraint firstItem="kan-SM-Gdz" firstAttribute="top" secondItem="lWy-5D-Wco" secondAttribute="bottom" constant="10" id="jlQ-xY-Rm5"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
